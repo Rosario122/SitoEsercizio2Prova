@@ -1,0 +1,299 @@
+:root {
+  --testo1: #000;
+  --testo2: #fdfdfd;
+  --headfooter: #cacacc;
+  --section: #c0c0c0;
+  --background: #000622;
+}
+
+* {
+  box-sizing: border-box;
+}
+ 
+body {
+  margin: 0;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
+ 
+h1, h2, h3, h4, h5, h6, p, ul, ol {
+  margin: 0;
+}
+ 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.contenitore {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+ 
+header, footer {
+    padding: 3rem 3rem;
+    background-color: var(--headfooter);
+}
+
+
+header .contenitore, footer .contenitore {
+    display: flex;
+    justify-content: space-between;
+}
+
+header p {
+    color: var(--testo1);
+}
+
+body {
+    background-color: var(--background);
+}
+
+footer p {
+    color: var(--testo1);
+    font-size: 2rem;
+    font-weight: 400;
+    font-style: italic;
+}
+
+footer {
+  margin-top: 18rem;
+}
+
+h1 {
+    color: var(--testo1);
+    text-shadow: 0.25rem 0.25rem 0.5rem #313131;
+    font-weight: 350;
+    font-size: 5rem;
+}
+
+h2, main p {
+    color: var(--testo2);
+}
+
+.nome-sito {
+    font-weight: bold;
+}
+
+.nome-sito a {
+  color: var(--testo1);
+  text-decoration: none;
+  font-size: 2.8rem;
+  font-style: italic;
+  font-weight: 400;
+}
+
+/* sezione 0 inizio*/
+
+.section-0 {
+      background: var(--section);
+      border-radius: 1rem;
+}
+
+.section-0 .contenitore{
+    margin-top: 4.5rem;
+    padding-block: 3.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 3rem;
+}
+
+.section-0 img {
+  max-width: 34rem;
+  height: auto;
+}
+
+/* sezione 1 inizio */
+
+.section-1 {
+  margin-top: 7rem;
+}
+
+.section-1 h2 {
+  font-size: 5rem;
+}
+
+.section-1 .contenuto {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 2.5rem;
+  font-weight:normal;
+  gap: 3rem;
+  margin-top: 3rem;
+}
+
+.section-1 img {
+  max-width: 28rem;
+  height: auto;
+}
+
+
+/* sezione 2 inizio */
+
+.section-2 {
+  margin-top: 6rem;
+}
+
+.section-2 h2 {
+  font-size: 5rem;
+  font-style: italic;
+  font-weight: 400;
+  text-align: center;
+}
+
+.lista-1 {
+  list-style: none;
+  font-size: larger;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 6rem;
+  width: 100%;
+}
+
+.lista-1 li {
+  background: var(--section);
+  border-radius: 12px;
+  padding: 1.8rem 3rem;
+}
+
+.lista-1 p {
+  color: var(--testo1);
+  font-size: 3rem;
+  font-style: italic;
+}
+
+/* inizio sezione 3*/
+
+.section-3 {
+  margin-top: 6rem;
+}
+
+.section-3 h2 {
+  font-size: 5rem;
+  font-style: italic;
+  font-weight: 300;
+}
+
+.section-3 .contenuto {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 2.2rem;
+  font-weight: 400;
+  gap: 3rem;
+  margin-top: 4rem;
+}
+
+.section-3 img {
+  max-width: 34rem;
+  height: auto;
+}
+
+/* inizio sezione 4 */
+
+.section-4 {
+  margin-top: 9rem;
+
+}
+
+.section-4 p {
+  font-size: 2.5rem;
+  font-weight: 300;
+  font-style: italic;
+  text-align: center;
+}
+
+
+
+
+
+/* FINE SITO DESKTOP, INIZIO MOBILE*/
+@media (max-width: 768px) {
+
+  header, footer {
+    padding: 1rem;
+  }
+
+  .nome-sito a {
+    font-size: 1rem;
+  }
+
+  main .contenitore {
+    padding-inline: 1rem;
+  }
+
+  /* sezione 0: resta affiancata */
+  .section-0 {
+    margin-inline: 1rem;
+  }
+
+  .section-0 .contenitore {
+    margin-top: 1.5rem;
+    padding-block: 1.5rem;
+    padding-inline: 1rem;
+    gap: 1rem;
+    font-size: 1rem;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  .section-0 img, .section-1 img, .section-3 img {
+    max-width: 45%;
+  }
+
+  .section-1 h2, .section-2 h2, .section-3 h2 {
+    font-size: 1.6rem;
+  }
+
+  .section-1, .section-2, .section-3 {
+    margin-top: 2.5rem;
+  }
+
+  .section-1 .contenuto, .section-3 .contenuto {
+    font-size: 0.8rem;
+    gap: 1rem;
+    margin-top: 1.5rem;
+  }
+
+  .lista-1 {
+    padding: 0;
+    gap: 0.5rem;
+    margin-top: 1.5rem;
+    justify-content: center;
+  }
+
+  .lista-1 li {
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+  }
+
+  .lista-1 p {
+    font-size: 0.8rem;
+  }
+
+  /* sezione 4 e footer */
+  .section-4 {
+    margin-top: 3rem;
+  }
+
+  .section-4 p {
+    font-size: 0.9rem;
+  }
+
+  footer {
+    margin-top: 3rem;
+  }
+
+  footer p {
+    font-size: 0.9rem;
+    padding: 0.5rem;
+  }
+}
